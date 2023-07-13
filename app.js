@@ -26,7 +26,10 @@ const handleKeyClick = (e) => {
     else displayResultEl.textContent = actualNum + '.';
   }
 
-  console.log('clicked!', key, keyType);
+  if (keyType === 'clear') {
+    displayResultEl.textContent = '0';
+    displayExpressionEl.textContent = '';
+  }
 };
 
 calculatorKeys.forEach((k) => k.addEventListener('click', handleKeyClick));
