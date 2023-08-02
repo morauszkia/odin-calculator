@@ -13,7 +13,11 @@ html {
 body {
   width: 100vw;
   height: 100vh;
-  background-image: linear-gradient(to bottom right, #e7f5ff, #a5d8ff);
+  background-image: linear-gradient(
+    to bottom right,
+    hsl(205, 100%, 65%),
+    hsl(205, 100%, 45%)
+  );
 
   display: flex;
   justify-content: center;
@@ -98,4 +102,17 @@ body {
 
 .key--equals:hover {
   background-color: hsl(45, 97%, 47%);
+}
+
+footer {
+  position: absolute;
+  bottom: 25px;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+footer a:link,
+footer a:visited {
+  text-decoration: none;
+  color: hsl(45, 100%, 54%);
 }
