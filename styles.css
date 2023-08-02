@@ -67,19 +67,35 @@ body {
   font-size: 25px;
 }
 
+.key:hover {
+  background-color: #eee;
+}
+
 .key--clear {
   grid-column: 1 / span 2;
 }
 
 .key--action {
-  background-color: #a5d8ff;
+  background-color: hsl(206, 100%, 82%);
+}
+
+.key--action:hover {
+  background-color: hsl(206, 100%, 72%);
 }
 
 .key--operator {
-  background-color: #fff3bf;
+  background-color: hsl(49, 100%, 87%);
+}
+
+.key--operator:hover {
+  background-color: hsl(49, 100%, 77%);
 }
 
 .key--equals {
-  background-color: #fcc419;
+  background-color: hsl(45, 97%, 54%);
   grid-column: 3 / span 2;
+}
+
+.key--equals:hover {
+  background-color: hsl(45, 97%, 47%);
 }
