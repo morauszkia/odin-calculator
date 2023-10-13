@@ -121,4 +121,5 @@ const handleKeyClick = (e) => {
 calculatorKeys.forEach((k) => k.addEventListener('click', handleKeyClick));
 
 // TODO
+// Add DEL functionality
 // Add +/- functionality
